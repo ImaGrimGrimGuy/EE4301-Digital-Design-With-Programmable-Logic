@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hartm391/EE_4301/Labs/02/project_2/project_2.sim/sim_1/impl/timing/adder8_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder8
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hartm391/EE_4301/Labs/01/lab1/adder8_tb.v.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder8_tb

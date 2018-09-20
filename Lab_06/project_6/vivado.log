@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Jul 11 15:49:18 2018
+# Process ID: 4296
+# Current directory: C:/Users/hartm391/EE_4301/Labs/06/project_6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5964 C:\Users\hartm391\EE_4301\Labs\06\project_6\project_6.xpr
+# Log file: C:/Users/hartm391/EE_4301/Labs/06/project_6/vivado.log
+# Journal file: C:/Users/hartm391/EE_4301/Labs/06/project_6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hartm391/EE_4301/Labs/06/project_6/project_6.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1
+[Wed Jul 11 15:49:56 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/06/project_6/project_6.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 105 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/06/project_6/project_6.srcs/constrs_1/new/Casino_Driver.xdc]
+Finished Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/06/project_6/project_6.srcs/constrs_1/new/Casino_Driver.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 6 instances
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1152.680 ; gain = 252.344
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 105 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/06/project_6/.Xil/Vivado-4296-ECE-LAB308/dcp/Casino_Driver.xdc]
+Finished Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/06/project_6/.Xil/Vivado-4296-ECE-LAB308/dcp/Casino_Driver.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1558.969 ; gain = 0.961
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1558.969 ; gain = 0.961
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LDCP => LDCP (LDCE, LUT3, LUT3, VCC, GND): 6 instances
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.

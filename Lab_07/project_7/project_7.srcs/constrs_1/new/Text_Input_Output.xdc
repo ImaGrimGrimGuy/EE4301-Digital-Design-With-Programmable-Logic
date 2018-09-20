@@ -1,0 +1,51 @@
+# Clock signal
+set_property PACKAGE_PIN W5 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+
+#switches
+set_property PACKAGE_PIN V17 [get_ports {switches[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {switches[0]}]
+set_property PACKAGE_PIN V16 [get_ports {switches[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {switches[1]}]
+set_property PACKAGE_PIN W16 [get_ports {switches[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {switches[2]}]
+set_property PACKAGE_PIN W17 [get_ports {switches[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {switches[3]}]
+set_property PACKAGE_PIN W15 [get_ports {switches[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {switches[4]}]
+
+#buttons
+set_property PACKAGE_PIN T18 [get_ports reset_button]
+set_property IOSTANDARD LVCMOS33 [get_ports reset_button]
+set_property PACKAGE_PIN W19 [get_ports preview_button]
+set_property IOSTANDARD LVCMOS33 [get_ports preview_button]
+set_property PACKAGE_PIN U17 [get_ports save_button]
+set_property IOSTANDARD LVCMOS33 [get_ports save_button]
+
+# 7-seg display
+#segments
+set_property PACKAGE_PIN V7 [get_ports {decoder[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {decoder[0]}]
+set_property PACKAGE_PIN U7 [get_ports {decoder[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {decoder[1]}]
+set_property PACKAGE_PIN V5 [get_ports {decoder[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {decoder[2]}]
+set_property PACKAGE_PIN U5 [get_ports {decoder[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {decoder[3]}]
+set_property PACKAGE_PIN V8 [get_ports {decoder[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {decoder[4]}]
+set_property PACKAGE_PIN U8 [get_ports {decoder[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {decoder[5]}]
+set_property PACKAGE_PIN W6 [get_ports {decoder[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {decoder[6]}]
+set_property PACKAGE_PIN W7 [get_ports {decoder[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {decoder[7]}]
+#segment sets
+set_property PACKAGE_PIN U2 [get_ports {seg_enable[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {seg_enable[0]}]
+set_property PACKAGE_PIN U4 [get_ports {seg_enable[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {seg_enable[1]}]
+set_property PACKAGE_PIN V4 [get_ports {seg_enable[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {seg_enable[2]}]
+set_property PACKAGE_PIN W4 [get_ports {seg_enable[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {seg_enable[3]}]

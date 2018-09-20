@@ -1,0 +1,10 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 002c2faa604e4ac9ad0d9163df6c2ae6 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Casino_Driver_behav xil_defaultlib.Casino_Driver xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net getter is not permitted [C:/Users/hartm391/EE_4301/Labs/06/project_6/project_6.srcs/sources_1/new/Die_Simulator.v:32]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 8 for port q [C:/Users/hartm391/EE_4301/Labs/06/project_6/project_6.srcs/sources_1/new/Casino_Driver.v:61]
+WARNING: [VRFC 10-597] element index 7 into q is out of bounds [C:/Users/hartm391/EE_4301/Labs/06/project_6/project_6.srcs/sources_1/new/Casino_Driver.v:62]
+WARNING: [VRFC 10-597] element index 3 into q is out of bounds [C:/Users/hartm391/EE_4301/Labs/06/project_6/project_6.srcs/sources_1/new/Casino_Driver.v:63]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

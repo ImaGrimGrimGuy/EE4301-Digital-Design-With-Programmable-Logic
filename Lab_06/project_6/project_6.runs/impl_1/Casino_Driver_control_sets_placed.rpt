@@ -1,0 +1,74 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Wed Jul 11 15:50:21 2018
+| Host         : ECE-LAB308 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Casino_Driver_control_sets_placed.rpt
+| Design       : Casino_Driver
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    21 |
+| Unused register locations in slices containing registers |    63 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              13 |           11 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              64 |           16 |
+| Yes          | No                    | No                     |               8 |            2 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             212 |           57 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------+------------------------------+------------------------------+------------------+----------------+
+|    Clock Signal    |         Enable Signal        |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++--------------------+------------------------------+------------------------------+------------------+----------------+
+|  Roll/q_reg[6]/G0  |                              |                              |                1 |              1 |
+|  Roll/q_reg[5]/G0  |                              |                              |                1 |              1 |
+|  Roll/q_reg[4]/G0  |                              |                              |                1 |              1 |
+|  Roll/q_reg[2]/G0  |                              |                              |                1 |              1 |
+|  Roll/q_reg[1]/G0  |                              |                              |                1 |              1 |
+|  Roll/q_reg[0]/G0  |                              |                              |                1 |              1 |
+|  digits/tic_reg[1] |                              |                              |                1 |              2 |
+|  clk_IBUF_BUFG     | Roll/E[0]                    | rst_IBUF                     |                3 |              4 |
+|  clk_IBUF_BUFG     |                              |                              |                4 |              5 |
+|  clk_IBUF_BUFG     | FSM_onehot_state[4]_i_1_n_0  | rst_IBUF                     |                1 |              5 |
+|  clk_IBUF_BUFG     | nexstate                     | rst_IBUF                     |                2 |              5 |
+|  clk_IBUF_BUFG     | msg1                         | rst_IBUF                     |                3 |              6 |
+|  rolling/q_reg[0]  | Roll/LSFR/q[7]_i_1_n_0       |                              |                2 |              8 |
+|  clk_IBUF_BUFG     |                              | digits/count00_carry__1_n_1  |                8 |             32 |
+|  clk_IBUF_BUFG     |                              | rolling/count00_carry__1_n_1 |                8 |             32 |
+|  clk_IBUF_BUFG     | digits/count00_carry__1_n_1  | digits/count1[0]_i_1_n_0     |                8 |             32 |
+|  clk_IBUF_BUFG     | digits/count1[0]_i_1_n_0     | digits/count2[0]_i_1_n_0     |                8 |             32 |
+|  clk_IBUF_BUFG     | digits/count2[0]_i_1_n_0     | digits/clear                 |                8 |             32 |
+|  clk_IBUF_BUFG     | rolling/count00_carry__1_n_1 | rolling/count1[0]_i_1__0_n_0 |                8 |             32 |
+|  clk_IBUF_BUFG     | rolling/count1[0]_i_1__0_n_0 | rolling/count2[0]_i_1__0_n_0 |                8 |             32 |
+|  clk_IBUF_BUFG     | rolling/count2[0]_i_1__0_n_0 | rolling/_inferred__1_n_0     |                8 |             32 |
++--------------------+------------------------------+------------------------------+------------------+----------------+
+
+

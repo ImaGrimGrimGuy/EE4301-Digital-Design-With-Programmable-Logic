@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1531342196">
+  <File Type="OPT-DCP" Name="Casino_Driver_opt.dcp"/>
+  <File Type="ROUTE-STATUS-PB" Name="Casino_Driver_route_status.pb"/>
+  <File Type="PA-TCL" Name="Casino_Driver.tcl"/>
+  <File Type="RDI-RDI" Name="Casino_Driver.vdi"/>
+  <File Type="PWROPT-DRC" Name="Casino_Driver_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Casino_Driver_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Casino_Driver_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="Casino_Driver_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Casino_Driver_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="Casino_Driver.hwdef"/>
+  <File Type="OPT-TIMING" Name="Casino_Driver_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Casino_Driver_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Casino_Driver_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Casino_Driver_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Casino_Driver_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Casino_Driver_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Casino_Driver_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Casino_Driver_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Casino_Driver_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Casino_Driver_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Casino_Driver_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Casino_Driver_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Casino_Driver_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Casino_Driver_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Casino_Driver_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="Casino_Driver_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="Casino_Driver_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Casino_Driver_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Casino_Driver_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Casino_Driver_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Casino_Driver_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIT" Name="Casino_Driver.bit"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Casino_Driver_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Casino_Driver_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Casino_Driver_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Casino_Driver_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Casino_Driver_route_status.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Casino_Driver_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Casino_Driver_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Casino_Driver_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Casino_Driver_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Casino_Driver_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Casino_Driver_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Casino_Driver_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Casino_Driver_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Casino_Driver_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Casino_Driver_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIN" Name="Casino_Driver.bin"/>
+  <File Type="BITSTR-MSK" Name="Casino_Driver.msk"/>
+  <File Type="BITSTR-RBT" Name="Casino_Driver.rbt"/>
+  <File Type="BITSTR-NKY" Name="Casino_Driver.nky"/>
+  <File Type="BITSTR-BMM" Name="Casino_Driver_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Casino_Driver.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Casino_Driver.sysdef"/>
+  <File Type="BG-BGN" Name="Casino_Driver.bgn"/>
+  <File Type="BG-DRC" Name="Casino_Driver.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/lsfr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../04/project_4/project_4.srcs/sources_1/new/lsfr.v"/>
+        <Attr Name="ImportTime" Val="1529610219"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/lookup.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../04/project_4/project_4.srcs/sources_1/new/lookup.v"/>
+        <Attr Name="ImportTime" Val="1529609194"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_divider.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../04/project_4/project_4.srcs/sources_1/new/clock_divider.v"/>
+        <Attr Name="ImportTime" Val="1530034297"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Die_Simulator.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Casino_Driver.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../05/project_5/project_5.srcs/sources_1/new/Casino_Driver.v"/>
+        <Attr Name="ImportTime" Val="1530213200"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full_adder.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/adder8.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Casino_Driver"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Casino_Driver.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../05/project_5/project_5.srcs/constrs_1/new/Casino_Driver.xdc"/>
+        <Attr Name="ImportTime" Val="1530208012"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

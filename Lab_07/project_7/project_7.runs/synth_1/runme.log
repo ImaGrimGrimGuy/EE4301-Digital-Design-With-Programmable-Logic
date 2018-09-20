@@ -1,0 +1,390 @@
+
+*** Running vivado
+    with args -log Text_Input_Output.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Text_Input_Output.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Text_Input_Output.tcl -notrace
+Command: synth_design -top Text_Input_Output -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9200 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 315.188 ; gain = 108.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Text_Input_Output' [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/Text_Input_Output.v:23]
+	Parameter idle bound to: 3'b101 
+	Parameter preview bound to: 3'b001 
+	Parameter save bound to: 3'b010 
+	Parameter execute bound to: 3'b100 
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/clock_divider.v:23]
+	Parameter timeconst bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized0' [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/clock_divider.v:23]
+	Parameter timeconst bound to: 70 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized0' (1#1) [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'block_ram' [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/block_ram.v:23]
+INFO: [Synth 8-256] done synthesizing module 'block_ram' (2#1) [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/block_ram.v:23]
+INFO: [Synth 8-638] synthesizing module 'lookup' [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/lookup.v:23]
+INFO: [Synth 8-256] done synthesizing module 'lookup' (3#1) [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/lookup.v:23]
+INFO: [Synth 8-638] synthesizing module 'Button_Trigger' [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/Button_Trigger.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Button_Trigger' (4#1) [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/Button_Trigger.v:23]
+WARNING: [Synth 8-567] referenced signal 'preview_button' should be on the sensitivity list [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/Text_Input_Output.v:137]
+WARNING: [Synth 8-567] referenced signal 'msg1' should be on the sensitivity list [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/Text_Input_Output.v:137]
+WARNING: [Synth 8-567] referenced signal 'msg2' should be on the sensitivity list [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/Text_Input_Output.v:137]
+WARNING: [Synth 8-567] referenced signal 'msg3' should be on the sensitivity list [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/Text_Input_Output.v:137]
+WARNING: [Synth 8-567] referenced signal 'preview_letter' should be on the sensitivity list [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/Text_Input_Output.v:137]
+WARNING: [Synth 8-567] referenced signal 'msg4' should be on the sensitivity list [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/Text_Input_Output.v:137]
+INFO: [Synth 8-256] done synthesizing module 'Text_Input_Output' (5#1) [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/sources_1/new/Text_Input_Output.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 352.625 ; gain = 146.168
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 352.625 ; gain = 146.168
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/constrs_1/new/Text_Input_Output.xdc]
+Finished Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/constrs_1/new/Text_Input_Output.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hartm391/EE_4301/Labs/07/project_7/project_7.srcs/constrs_1/new/Text_Input_Output.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Text_Input_Output_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Text_Input_Output_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 637.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "entry" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "entry" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_address" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 5     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Text_Input_Output 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 5     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module clock_divider__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module Button_Trigger 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "write_address" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "entry" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 637.148 ; gain = 430.691
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+----------------------------+---------------+----------------+
+|Module Name       | RTL Object                 | Depth x Width | Implemented As | 
++------------------+----------------------------+---------------+----------------+
+|lookup            | decoder                    | 32x8          | LUT            | 
+|Text_Input_Output | translator/decoder         | 32x8          | LUT            | 
+|Text_Input_Output | preview_translator/decoder | 32x8          | LUT            | 
++------------------+----------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------------+-------------------+-----------+----------------------+-----------------+
+|Module Name       | RTL Object        | Inference | Size (Depth x Width) | Primitives      | 
++------------------+-------------------+-----------+----------------------+-----------------+
+|Text_Input_Output | memory/memory_reg | Implied   | 32 x 5               | RAM16X1S x 10   | 
++------------------+-------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\msg4_reg[0] )
+INFO: [Synth 8-3886] merging instance 'msg3_reg[0]' (FDS) to 'msg2_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\msg2_reg[0] )
+INFO: [Synth 8-3886] merging instance 'msg1_reg[0]' (FDS) to 'msg2_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\msg2_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (msg4_reg[0]) is unused and will be removed from module Text_Input_Output.
+WARNING: [Synth 8-3332] Sequential element (msg2_reg[0]) is unused and will be removed from module Text_Input_Output.
+WARNING: [Synth 8-3332] Sequential element (msg3_reg[0]) is unused and will be removed from module Text_Input_Output.
+WARNING: [Synth 8-3332] Sequential element (msg1_reg[0]) is unused and will be removed from module Text_Input_Output.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 637.148 ; gain = 430.691
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 637.148 ; gain = 430.691
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    88|
+|3     |LUT1     |   259|
+|4     |LUT2     |    25|
+|5     |LUT3     |    87|
+|6     |LUT4     |     9|
+|7     |LUT5     |    20|
+|8     |LUT6     |    22|
+|9     |RAM16X1S |    10|
+|10    |FDRE     |   276|
+|11    |FDSE     |    33|
+|12    |IBUF     |     9|
+|13    |OBUF     |    12|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------+------------------------------+------+
+|      |Instance        |Module                        |Cells |
++------+----------------+------------------------------+------+
+|1     |top             |                              |   852|
+|2     |  digits        |clock_divider                 |   350|
+|3     |  memory        |block_ram                     |    21|
+|4     |  reset_trigger |Button_Trigger                |     5|
+|5     |  save_trigger  |Button_Trigger_0              |     8|
+|6     |  scroller      |clock_divider__parameterized0 |   350|
+|7     |  translator    |lookup                        |     7|
++------+----------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 637.148 ; gain = 430.691
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 637.148 ; gain = 113.754
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 637.148 ; gain = 430.691
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 10 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 637.148 ; gain = 398.277
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 637.148 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 17 14:46:29 2018...

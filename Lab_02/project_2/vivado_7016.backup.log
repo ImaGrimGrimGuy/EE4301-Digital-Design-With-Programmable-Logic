@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Jun 26 12:15:40 2018
+# Process ID: 7016
+# Current directory: C:/Users/hartm391/EE_4301/Labs/02/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2088 C:\Users\hartm391\EE_4301\Labs\02\project_2\project_2.xpr
+# Log file: C:/Users/hartm391/EE_4301/Labs/02/project_2/vivado.log
+# Journal file: C:/Users/hartm391/EE_4301/Labs/02/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hartm391/EE_4301/Labs/02/project_2/project_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
+open_run impl_4_Power_ExploreArea
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/02/project_2/.Xil/Vivado-7016-ECE-LAB308/dcp/adder8.xdc]
+Finished Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/02/project_2/.Xil/Vivado-7016-ECE-LAB308/dcp/adder8.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1024.203 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1024.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1126.348 ; gain = 264.363
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run impl_4_Power_ExploreArea
+launch_runs impl_4_Power_ExploreArea
+[Tue Jun 26 12:18:38 2018] Launched impl_4_Power_ExploreArea...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/02/project_2/project_2.runs/impl_4_Power_ExploreArea/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/02/project_2/.Xil/Vivado-7016-ECE-LAB308/dcp/adder8.xdc]
+Finished Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/02/project_2/.Xil/Vivado-7016-ECE-LAB308/dcp/adder8.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1527.246 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1527.246 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 26 12:23:54 2018...

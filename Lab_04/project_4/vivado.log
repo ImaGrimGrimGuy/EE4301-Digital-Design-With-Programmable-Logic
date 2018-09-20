@@ -1,0 +1,307 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Jun 26 12:24:04 2018
+# Process ID: 7964
+# Current directory: C:/Users/hartm391/EE_4301/Labs/04/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6436 C:\Users\hartm391\EE_4301\Labs\04\project_4\project_4.xpr
+# Log file: C:/Users/hartm391/EE_4301/Labs/04/project_4/vivado.log
+# Journal file: C:/Users/hartm391/EE_4301/Labs/04/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1
+[Tue Jun 26 12:36:07 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/synth_1/runme.log
+[Tue Jun 26 12:36:07 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/04/project_4/.Xil/Vivado-7964-ECE-LAB308/dcp/lab4_top.xdc]
+Finished Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/04/project_4/.Xil/Vivado-7964-ECE-LAB308/dcp/lab4_top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1043.684 ; gain = 1.047
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1043.684 ; gain = 1.047
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1159.699 ; gain = 290.934
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream
+[Tue Jun 26 12:37:31 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A89A6FA
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Tue Jun 26 12:38:17 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+close_hw
+close_design
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream
+[Tue Jun 26 12:39:47 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Jun 26 12:53:17 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/synth_1/runme.log
+[Tue Jun 26 12:53:17 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/04/project_4/.Xil/Vivado-7964-ECE-LAB308/dcp/lab4_top.xdc]
+Finished Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/04/project_4/.Xil/Vivado-7964-ECE-LAB308/dcp/lab4_top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1621.844 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1621.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1638.383 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A89A6FA
+set_property PROGRAM.FILE {C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/lab4_top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/lab4_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A89A6FA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A89A6FA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/lab4_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A89A6FA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A89A6FA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Jun 26 13:02:11 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/synth_1/runme.log
+[Tue Jun 26 13:02:11 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/lab4_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A89A6FA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A89A6FA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Jun 26 13:14:29 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/synth_1/runme.log
+[Tue Jun 26 13:14:29 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/lab4_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Jun 26 13:19:06 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/synth_1/runme.log
+[Tue Jun 26 13:19:06 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/lab4_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Jun 26 13:23:51 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/synth_1/runme.log
+[Tue Jun 26 13:23:51 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/lab4_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Jun 26 13:28:55 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/synth_1/runme.log
+[Tue Jun 26 13:28:55 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Jun 26 13:30:40 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/synth_1/runme.log
+[Tue Jun 26 13:30:40 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/lab4_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1
+launch_runs impl_1
+[Tue Jun 26 13:35:20 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 98 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/constrs_1/new/lb4_top.xdc]
+Finished Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/constrs_1/new/lb4_top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: lab4_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:51 ; elapsed = 01:14:32 . Memory (MB): peak = 1822.957 ; gain = 1615.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lab4_top' [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/sources_1/new/lab4_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/sources_1/new/clock_divider.v:23]
+	Parameter timeconst bound to: 70 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized0' [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/sources_1/new/clock_divider.v:23]
+	Parameter timeconst bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized0' (1#1) [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'lsfr' [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/sources_1/new/lsfr.v:23]
+INFO: [Synth 8-256] done synthesizing module 'lsfr' (2#1) [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/sources_1/new/lsfr.v:23]
+INFO: [Synth 8-638] synthesizing module 'lookup' [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/sources_1/new/lookup.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/sources_1/new/lookup.v:29]
+INFO: [Synth 8-256] done synthesizing module 'lookup' (3#1) [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/sources_1/new/lookup.v:23]
+INFO: [Synth 8-256] done synthesizing module 'lab4_top' (4#1) [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/sources_1/new/lab4_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:52 ; elapsed = 01:14:33 . Memory (MB): peak = 1850.238 ; gain = 1643.063
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:52 ; elapsed = 01:14:33 . Memory (MB): peak = 1850.238 ; gain = 1643.063
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 8 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/constrs_1/new/lb4_top.xdc]
+Finished Parsing XDC File [C:/Users/hartm391/EE_4301/Labs/04/project_4/project_4.srcs/constrs_1/new/lb4_top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:03:56 ; elapsed = 01:14:36 . Memory (MB): peak = 1981.285 ; gain = 1774.109
+16 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1981.285 ; gain = 208.719
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 26 13:39:38 2018...

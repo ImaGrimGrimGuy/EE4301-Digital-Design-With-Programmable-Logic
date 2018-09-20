@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Jun 21 10:31:00 2018
+# Process ID: 8404
+# Current directory: C:/Users/hartm391/EE_4301/Labs/03/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9308 C:\Users\hartm391\EE_4301\Labs\03\project_3\project_3.xpr
+# Log file: C:/Users/hartm391/EE_4301/Labs/03/project_3/vivado.log
+# Journal file: C:/Users/hartm391/EE_4301/Labs/03/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hartm391/EE_4301/Labs/03/project_3/project_3.xpr
+update_compile_order -fileset sources_1
+remove_files -fileset sim_1 C:/Users/hartm391/EE_4301/Labs/03/adder8_tb.v.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_4_Power_ExploreArea
+wait_on_run impl_4_Power_ExploreArea
+open_run impl_4_Power_ExploreArea
+close_design
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_4_Power_ExploreArea
+wait_on_run impl_4_Power_ExploreArea
